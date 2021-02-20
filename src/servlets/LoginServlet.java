@@ -20,8 +20,6 @@ public class LoginServlet extends HttpServlet{
 		String firstName = request.getParameter("fname");
 		String lastName = request.getParameter("lname");
 		
-		System.out.println(firstName + lastName);
-		
 		RequestDispatcher rd = request.getRequestDispatcher("home");
 		rd.forward(request, response);
 		
